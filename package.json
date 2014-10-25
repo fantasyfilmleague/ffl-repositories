@@ -1,0 +1,18 @@
+{
+  "name": "ffl-repositories",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Fantasy Film League Repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bird Duck Software",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "2.8.3",
+    "pg": "3.6.2",
+    "sql-bricks-postgres": "0.3.0",
+    "ffl-db": "fantasyfilmleague/ffl-db"
+  }
+}
