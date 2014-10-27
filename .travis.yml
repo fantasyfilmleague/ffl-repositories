@@ -8,6 +8,6 @@ env:
     - POSTGRES_USERNAME=postgres
     - POSTGRES_PASSWORD=
     - POSTGRES_HOST=127.0.0.1
-    - POSTGRES_DATABASE=ffl-repositories-test
+    - POSTGRES_DATABASE=ffl_repositories_test
 before_script:
   - node_modules/.bin/ffl-db
