@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "0.10"
+addons:
+  postgresql: "9.3"
+env:
+  - POSTGRES_USERNAME=postgres
+  - POSTGRES_PASSWORD=
+  - POSTGRES_HOST=127.0.0.1
+  - POSTGRES_DATABASE=ffl-repositories-test
+before_script:
+  - node_modules/.bin/ffl-db
