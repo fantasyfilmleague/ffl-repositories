@@ -16,6 +16,7 @@ describe('UserRepository', function () {
       repository.create('test@user.com', 'pass', function (error, user) {
         assert.ifError(error);
         assert.ok(user);
+        done();
       });
     });
 
