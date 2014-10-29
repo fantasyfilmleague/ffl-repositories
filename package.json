@@ -1,11 +1,11 @@
 {
   "name": "ffl-repositories",
   "private": true,
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "Fantasy Film League Repositories",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "mocha --recursive -t 30s"
   },
   "author": "Bird Duck Software",
   "license": "ISC",
