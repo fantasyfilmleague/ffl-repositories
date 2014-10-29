@@ -29,7 +29,7 @@ describe('CastRepository', function () {
 
   describe('#create', function () {
 
-    it('should create a user', function (done) {
+    it('should create a cast', function (done) {
       createFilmActor(function (film, actor) {
         repository.create(film.id, actor.id, function (error, cast) {
           assert.ifError(error);
