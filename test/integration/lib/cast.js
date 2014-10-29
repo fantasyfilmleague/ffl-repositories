@@ -3,7 +3,7 @@
 var assert = require('assert');
 var Chance = require('chance');
 var moment = require('moment');
-var user = require('../../../lib/user');
+var cast = require('../../../lib/cast');
 var actor = require('../../../lib/actor');
 var film = require('../../../lib/film');
 
@@ -14,7 +14,7 @@ describe('CastRepository', function () {
     chance = new Chance();
     actorRepository = actor.createRepository();
     filmRepository = film.createRepository();
-    repository = user.createRepository();
+    repository = cast.createRepository();
   });
 
   function createFilmActor(callback) {
