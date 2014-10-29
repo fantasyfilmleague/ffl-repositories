@@ -26,7 +26,7 @@ describe('DailyFilmGrossRepository', function () {
 
     it('should create a daily film gross', function (done) {
       createFilm(function (film) {
-        repository.create(film.id, chance.integer(), moment.utc(), function (error, gross) {
+        repository.create(film.id, chance.integer({min: 1, max: 100}), moment.utc(), function (error, gross) {
           assert.ifError(error);
           assert.ok(gross);
           done();
