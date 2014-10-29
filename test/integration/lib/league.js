@@ -22,7 +22,7 @@ describe('LeagueRepository', function () {
 
         repository.create(user.id, chance.sentence(), function (error, league) {
           assert.ifError(error);
-          assert.ok(user);
+          assert.ok(league);
           done();
         });
       });
